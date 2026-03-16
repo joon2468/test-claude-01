@@ -1,5 +1,18 @@
 # React + TypeScript + Vite
 
+## 배포 정보
+
+### GitHub Pages
+- **URL**: https://joon2468.github.io/test-claude-01/
+- **방법**: `gh-pages` 패키지를 사용하여 `dist/` 폴더를 `gh-pages` 브랜치로 배포
+- **배포 명령**: `npm run deploy`
+- **설정**: `vite.config.ts`에 `base: '/test-claude-01/'` 추가 필요 (repo명과 일치)
+- **주의**: public repo에서만 무료 사용 가능
+
+---
+
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
