@@ -4,10 +4,26 @@
 
 ### GitHub Pages
 - **URL**: https://joon2468.github.io/test-claude-01/
-- **방법**: `gh-pages` 패키지를 사용하여 `dist/` 폴더를 `gh-pages` 브랜치로 배포
-- **배포 명령**: `npm run deploy`
+- **저장소**: public repo 필수 (private은 유료 플랜 필요)
 - **설정**: `vite.config.ts`에 `base: '/test-claude-01/'` 추가 필요 (repo명과 일치)
-- **주의**: public repo에서만 무료 사용 가능
+
+#### 배포 방식 비교
+
+| | 수동 배포 | GitHub Actions 자동 배포 |
+|---|---|---|
+| **방법** | `npm run deploy` 직접 실행 | main 브랜치에 push하면 자동 실행 |
+| **속도** | 로컬 빌드 속도 | 2~5분 (가상 서버 실행) |
+| **Actions 사용량** | 해당 없음 | push마다 소모 |
+
+#### GitHub Actions 설정
+- 워크플로우 파일: `.github/workflows/deploy.yml`
+- main 브랜치 push 시 자동으로 빌드 + `gh-pages` 브랜치로 배포
+- **권한 설정 필요**: Settings → Actions → General → Workflow permissions → "Read and write permissions"
+
+#### Actions 무료 제한
+- **public repo**: 무제한 무료
+- **private repo**: 월 2,000분 제한
+- push를 자주 하면 Actions가 그만큼 실행되므로 커밋은 자주, push는 적당히
 
 ---
 
