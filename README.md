@@ -1,4 +1,6 @@
-# React + TypeScript + Vite
+# test-claude-01 — GitHub Pages 배포 실험
+
+React + TypeScript + Vite 앱을 **GitHub Pages로 배포**해 보고, 수동 배포(`gh-pages`)와 자동 배포(GitHub Actions) 방식을 익히기 위한 연습용 프로젝트입니다.
 
 ## 배포 정보
 
